@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="patient_header_text">ΑΣΘΕΝΗΣ</string>
+    <string name="appointment_request_btn_text">Αιτημα Ραντεβου</string>
+    <string name="financial_details_btn_text">Κατασταση Οικονομικων Κινησεων</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_service_header_text">Δημιουργία Φυσικοθεραπευτηρίου</string>
+    <string name="doctor_details_text">Στοιχεία Φυσικοθεραπευτηρίου:</string>
+    <string name="service_name_hint">Όνομα</string>
+    <string name="address_hint">Διεύθυνση</string>
+    <string name="afm_hint">ΑΦΜ</string>
+</resources>

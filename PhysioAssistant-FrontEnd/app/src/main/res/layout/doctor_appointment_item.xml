@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Γιώργος Παπαδόπουλος"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αθλητική Μάλαξη"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="?android:textColorSecondary"
+            android:layout_below="@id/patientName"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serviceName"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/timeImage"
+                android:layout_width="@dimen/location_image_size"
+                android:layout_height="@dimen/location_image_size"
+                android:src="@drawable/ic_clock"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00-12:30"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?android:textColorSecondary"
+                android:layout_toEndOf="@id/timeImage"
+                android:layout_marginLeft="2dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/deleteImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

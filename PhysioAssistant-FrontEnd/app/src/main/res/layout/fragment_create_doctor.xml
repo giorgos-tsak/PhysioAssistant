@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.admin.CreateDoctorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/createButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Δημιουργία Φυσικοθεραπευτηρίου"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+                <RelativeLayout
+                    android:id="@+id/nameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nameWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/nameEditText"
+                        android:text="*Εισάγεται Όνομα"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nameWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Όνομα"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/addressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/addressWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/addressEditText"
+                        android:text="*Εισάγεται διεύθυνση"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/addressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addressWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Διεύθυνση"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/afmLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addressLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/afmWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/afmEditText"
+                        android:text="*Εισάγεται ΑΦΜ"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/afmEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/afmWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="ΑΦΜ"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/usernameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/afmLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/usernameWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/usernameEditText"
+                        android:text="*Εισάγεται Username"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/usernameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/usernameWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/passwordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/passwordWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/passwordEditText"
+                        android:text="*Εισάγεται Password"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/passwordWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Δημιουργία"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:typeface="serif"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

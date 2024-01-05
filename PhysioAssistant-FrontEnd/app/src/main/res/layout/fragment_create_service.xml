@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.admin.CreateServiceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/createButton"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Δημιουργία Υπηρεσίας"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+                <RelativeLayout
+                    android:id="@+id/codeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/codeWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/codeEditText"
+                        android:text="*Εισάγεται κωδικό"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/codeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/codeWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Κωδικός"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/nameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/codeLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/nameWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/nameEditText"
+                        android:text="*Εισάγεται όνομα"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nameWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Όνομα"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/descLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/descWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/descEditText"
+                        android:text="*Εισάγεται περιγραφή"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/descEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/descWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:gravity="top|start"
+                        android:hint="Περιγραφή"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minLines="3"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/costLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/descLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/costWarning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/costEditText"
+                        android:text="*Εισάγεται κόστος"
+                        android:textColor="@color/error_red"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/costEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/costWarning"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="Κόστος"
+                        android:inputType="numberDecimal"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/imageURLLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/costLayout"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/optionalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*Προαιρετικό"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="?android:textColorSecondary"
+                        android:layout_alignStart="@id/urlEditText"/>
+
+                    <EditText
+                        android:id="@+id/urlEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/optionalText"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:hint="URL Εικόνας"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="serif"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Δημιουργία"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:typeface="serif"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

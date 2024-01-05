@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_dark">#131626</color>
+    <color name="secondary_light">#FFFFFFFF</color>
+
+    <color name="button_idle">@color/light_gray</color>
+    <color name="button_pressed">@color/blue</color>
+    <color name="gray">#A59C9C</color>
+    <color name="dark_gray">#736F6F</color>
+    <color name="light_gray">#E6DDDD</color>
+    <color name="light_dark">#1E1E1E</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="error_red">#DC3545</color>
+    <color name="success_green">#28a745</color>
+    <color name="blue">#4B96E8</color>
+
+    <!-- Light Mode Colors -->
+    <color name="colorPrimary">#007AFF</color>
+    <color name="colorPrimaryVariant">#0052D6</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#FF9500</color>
+    <color name="colorSecondaryVariant">#E56E00</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#F4F4F4</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorError">#FF3B30</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="colorPrimaryDark">#0A84FF</color>
+    <color name="colorPrimaryVariantDark">#007AFF</color>
+    <color name="colorOnPrimaryDark">#FFFFFF</color>
+    <color name="colorSecondaryDark">#FF9500</color>
+    <color name="colorSecondaryVariantDark">#E56E00</color>
+    <color name="colorOnSecondaryDark">#000000</color>
+    <color name="colorBackgroundDark">#121212</color>
+
+    <color name="colorOnSurfaceDark">#FFFFFF</color>
+    <color name="colorErrorDark">#FF453A</color>
+    <color name="colorOnErrorDark">#FFFFFF</color>
+    <color name="orange">#B88D37</color>
+
+
+</resources>

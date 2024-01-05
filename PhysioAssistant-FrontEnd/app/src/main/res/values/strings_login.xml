@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_as_text">Σύνδεση ώς:</string>
+
+    <string-array name="user_types">
+        <item>--Επιλέξτε τύπο Χρήστη--</item>
+        <item>ΠΣΦ</item>
+        <item>ΓΙΑΤΡΟΣ</item>
+        <item>ΑΣΘΕΝΗΣ</item>
+    </string-array>
+</resources>

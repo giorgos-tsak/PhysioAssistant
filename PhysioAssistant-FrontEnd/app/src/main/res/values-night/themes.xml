@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PhysioAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/colorBackgroundDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+        <item name="colorSecondary">@color/gray</item>
+        <item name="navBarColor">@color/light_dark</item>
+        <item name="colorOnSecondary">@color/light_dark</item>
+
+    </style>
+
+
+
+
+</resources>

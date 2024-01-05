@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <uom.android.physioassistant.ui.NavItem
+        android:id="@+id/homeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/patientsLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <uom.android.physioassistant.ui.NavButton
+            android:id="@+id/homeButton"
+            android:layout_width="@dimen/nav_button_size"
+            android:layout_height="@dimen/nav_button_size"
+            android:src="@drawable/ic_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/homeNavText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αρχική"
+            android:textSize="@dimen/text_size_nav"
+            app:layout_constraintEnd_toEndOf="@+id/homeButton"
+            app:layout_constraintStart_toStartOf="@+id/homeButton"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton" />
+
+    </uom.android.physioassistant.ui.NavItem>
+
+
+    <uom.android.physioassistant.ui.NavItem
+        android:id="@+id/calendarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/notificationLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/patientsLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <uom.android.physioassistant.ui.NavButton
+            android:id="@+id/calendarButton"
+            android:layout_width="@dimen/nav_button_size"
+            android:layout_height="@dimen/nav_button_size"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/calendarNavText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ημερολόγιο"
+            android:textSize="@dimen/text_size_nav"
+            app:layout_constraintEnd_toEndOf="@+id/calendarButton"
+            app:layout_constraintStart_toStartOf="@+id/calendarButton"
+            app:layout_constraintTop_toBottomOf="@+id/calendarButton" />
+
+    </uom.android.physioassistant.ui.NavItem>
+
+
+    <uom.android.physioassistant.ui.NavItem
+        android:id="@+id/patientsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/calendarLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <uom.android.physioassistant.ui.NavButton
+            android:id="@+id/patientsButton"
+            android:layout_width="@dimen/nav_button_size"
+            android:layout_height="@dimen/nav_button_size"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientNavText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ασθενείς"
+            android:textSize="@dimen/text_size_nav"
+            app:layout_constraintEnd_toEndOf="@+id/patientsButton"
+            app:layout_constraintStart_toStartOf="@+id/patientsButton"
+            app:layout_constraintTop_toBottomOf="@+id/patientsButton" />
+
+    </uom.android.physioassistant.ui.NavItem>
+
+
+    <uom.android.physioassistant.ui.NavItem
+        android:id="@+id/notificationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calendarLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <uom.android.physioassistant.ui.NavButton
+            android:id="@+id/notificationsButton"
+            android:layout_width="@dimen/nav_button_size"
+            android:layout_height="@dimen/nav_button_size"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/notificationNavText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ειδοποιήσεις"
+            android:textSize="@dimen/text_size_nav"
+            app:layout_constraintEnd_toEndOf="@id/notificationsButton"
+            app:layout_constraintStart_toStartOf="@id/notificationsButton"
+            app:layout_constraintTop_toBottomOf="@id/notificationsButton" />
+
+        <TextView
+            android:id="@+id/notificationsCount"
+            android:layout_width="@dimen/notification_count_size"
+            android:layout_height="@dimen/notification_count_size"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/notification_count_text"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/notificationsButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </uom.android.physioassistant.ui.NavItem>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PhysioAssistant</string>
+
+    <string name="login_text">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_patient_text">Πως αισθάνεσε σήμερα;</string>
+    <string name="welcome_doctor_text">Καλώς ήρθες</string>
+    <string name="date_text">Δευτέρα, 8 Μαίου</string>
+    <string name="upcoming_appointment">Επερχόμενο ραντεβού</string>
+    <string name="service_name">Αθλητική Μάλαξη</string>
+    <string name="service_date_text">10/5 12:00</string>
+    <string name="address_text">Θεσσαλονίκη, 3</string>
+    <string name="remaining_days_text">Απομένουν 4 ημέρες</string>
+    <string name="service_text">Υπηρεσίες</string>
+    <string name="show_all_text">Προβολή όλων</string>
+
+    <string name="cancel_text">Ακυρωση</string>
+    <string name="add_text">Προσθηκη</string>
+    <string name="default_error_text">Ούπς! Υπήρξε κάποιο Σφάλμα.</string>
+
+    <string name="account_details_text">Στοιχεία Λογαριασμού:</string>
+    <string name="service_description">Αθλητική Μάλαξη», «Είδος θεραπευτικού μασάζ που απευθύνεται σε αθλητές. Τα είδη αθλητικής μάλαξης που έχουν καθιερωθεί είναι τέσσερα: (α) συντήρησης, (β) προετοιμασίας, (γ) αποκατάστασης, και (δ) μέσο-αγωνιστική. Οι τεχνικές που χρησιμοποιούνται στην αθλητική μάλαξη είναι ιδιαίτερα αποτελεσματικές στη διαχείριση οξέων και χρόνιων τραυματισμών, στη μείωση της έντασης του μυϊκού σπασμού και της αίσθησης του πόνου στους τραυματισμένους-υπερφορτισμένους μυς, καθώς και στην επούλωση και τη δημιουργία νέων, ισχυρών και ελαστικών ιστών.Αθλητική Μάλαξη», «Είδος θεραπευτικού μασάζ που απευθύνεται σε αθλητές. Τα είδη αθλητικής μάλαξης που έχουν καθιερωθεί είναι τέσσερα: (α) συντήρησης, (β) προετοιμασίας, (γ) αποκατάστασης, και (δ) μέσο-αγωνιστική. Οι τεχνικές που χρησιμοποιούνται στην αθλητική μάλαξη είναι ιδιαίτερα αποτελεσματικές στη διαχείριση οξέων και χρόνιων τραυματισμών, στη μείωση της έντασης του μυϊκού σπασμού και της αίσθησης του πόνου στους τραυματισμένους-υπερφορτισμένους μυς, καθώς και στην επούλωση και τη δημιουργία νέων, ισχυρών και ελαστικών ιστών.</string>
+</resources>

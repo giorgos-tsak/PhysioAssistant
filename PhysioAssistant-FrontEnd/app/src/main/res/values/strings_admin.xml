@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admin_header_text">ΠΣΦ</string>
+    <string name="create_physio_btn_text">Δημιουργια Φυσικοθεραπευτηριου</string>
+    <string name="add_service_btn_text">Προσθηκη Παροχης</string>
+</resources>
